@@ -6,10 +6,9 @@
     android:gravity="center"
     tools:context="com.yan.newbe.MainActivity">
 
-    <TextView
-        android:id="@+id/hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+   <org.jetbrains.anko._WebView
+       android:id="@+id/webView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
 
 </RelativeLayout>

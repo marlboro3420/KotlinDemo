@@ -10,12 +10,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        hello.text = "Hello"
+        initWebView()
 
 //        var intent = Intent(this, SeActivity::class.java)
-        var list = arrayListOf<String>(
+        val list = arrayListOf<String>(
                 "asd", "asda", "asd"
         )
-        Log.e("Kt",list.toString())
+        Log.e("Kt", list.toString())
+    }
+
+    fun initWebView() {
+        webView.settings.domStorageEnabled = true
+        webView.loadUrl("asdasd")
     }
 }
