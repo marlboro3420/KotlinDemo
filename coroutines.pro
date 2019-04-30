@@ -6,7 +6,3 @@
 -keepclassmembernames class kotlinx.** {
     volatile <fields>;
 }
-
--keepclasseswithmembers class * {
-    public <init>(android.content.Context);
-}
